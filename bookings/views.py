@@ -37,13 +37,12 @@ def restaurant(request):
   return render(request,'restaurant.html')
 
 def room_details(request):
-  return render(request,'Room details page')
+   return render(request, 'room_details.html')
 
 def rooms(request):
   return render(request,'rooms.html')
 
-def starter_page(request):
-  return render(request,'starter page.html')
+
 
 def terms(request):
   return render(request,'terms.html')

@@ -72,7 +72,7 @@ urlpatterns = [
    path('restaurant/', views.restaurant,name="restaurant"),
    path('room_details/', views.room_details,name="room_details"),
    path('rooms/', views.rooms,name="rooms"),
-   path('starter_page/', views.starter_page,name="starter_page"),
+   
    path('terms/', views.terms,name="terms"),
 
 
