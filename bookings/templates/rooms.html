@@ -1,4 +1,5 @@
-{% extends "base.html"} {% block title %} rooms - Bookings {% endblock %}
+{% extends 'base.html' %} {% load static %} {% block title %}rooms{% endblock %}
+{% block content %}
 
 <body class="rooms-page">
   <header id="header" class="header sticky-top">
@@ -459,3 +460,5 @@
     <!-- /Rooms 2 Section -->
   </main>
 </body>
+
+{% endblock %}

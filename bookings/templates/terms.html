@@ -1,4 +1,5 @@
-{% extends "base.html"} {% block title %} terms - Bookings {% endblock %}
+{% extends 'base.html' %} {% load static %} {% block title %}terms{% endblock %}
+{% block content %}
 
 <body class="terms-page">
   <header id="header" class="header sticky-top">
@@ -306,3 +307,5 @@
     <!-- /Terms Of Service Section -->
   </main>
 </body>
+
+{% endblock %}

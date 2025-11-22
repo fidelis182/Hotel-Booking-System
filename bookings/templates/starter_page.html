@@ -1,5 +1,7 @@
-{% extends "base.html"} {% block title %} 404 - Bookings {% endblock %}
-<body class="page-404">
+{% extends 'base.html' %} {% load static %} {% block title %}starter page{%
+endblock %} {% block content %}
+
+<body class="starter-page-page">
   <header id="header" class="header sticky-top">
     <div class="topbar d-flex align-items-center dark-background">
       <div
@@ -54,8 +56,10 @@
                 <li><a href="booking.html">Booking</a></li>
                 <li><a href="terms.html">Terms Page</a></li>
                 <li><a href="privacy.html">Privacy Page</a></li>
-                <li><a href="404.html" class="active">404 Page</a></li>
-                <li><a href="starter-page.html">Starter Page</a></li>
+                <li><a href="404.html">404 Page</a></li>
+                <li>
+                  <a href="starter-page.html" class="active">Starter Page</a>
+                </li>
               </ul>
             </li>
             <li><a href="contact.html">Contact</a></li>
@@ -99,60 +103,36 @@
       <div
         class="container d-lg-flex justify-content-between align-items-center"
       >
-        <h1 class="mb-2 mb-lg-0">404</h1>
+        <h1 class="mb-2 mb-lg-0">Starter Page</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">404</li>
+            <li class="current">Starter Page</li>
           </ol>
         </nav>
       </div>
     </div>
     <!-- End Page Title -->
 
-    <!-- Error 404 Section -->
-    <section id="error-404" class="error-404 section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="text-center">
-          <div class="error-icon mb-4" data-aos="zoom-in" data-aos-delay="200">
-            <i class="bi bi-exclamation-circle"></i>
-          </div>
+    <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Starter Section</span>
+        <h2>Starter Section</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <!-- End Section Title -->
 
-          <h1 class="error-code mb-4" data-aos="fade-up" data-aos-delay="300">
-            404
-          </h1>
-
-          <h2 class="error-title mb-3" data-aos="fade-up" data-aos-delay="400">
-            Oops! Page Not Found
-          </h2>
-
-          <p class="error-text mb-4" data-aos="fade-up" data-aos-delay="500">
-            The page you are looking for might have been removed, had its name
-            changed, or is temporarily unavailable.
-          </p>
-
-          <div class="search-box mb-4" data-aos="fade-up" data-aos-delay="600">
-            <form action="#" class="search-form">
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Search for pages..."
-                  aria-label="Search"
-                />
-                <button class="btn search-btn" type="submit">
-                  <i class="bi bi-search"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <div class="error-action" data-aos="fade-up" data-aos-delay="700">
-            <a href="/" class="btn btn-primary">Back to Home</a>
-          </div>
-        </div>
+      <div class="container" data-aos="fade-up">
+        <p>Use this page as a starter for your own custom pages.</p>
       </div>
     </section>
-    <!-- /Error 404 Section -->
+    <!-- /Starter Section Section -->
   </main>
 </body>
+
+{% endblock %}

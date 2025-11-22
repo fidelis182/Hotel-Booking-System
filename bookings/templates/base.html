@@ -44,30 +44,37 @@
 
           <nav id="navmenu" class="navmenu">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="rooms.html">Rooms</a></li>
-              <li><a href="amenities.html">Amenities</a></li>
-              <li><a href="location.html">Location</a></li>
+              <a href="{% url 'index' %}">Home</a>
+              <a href="{% url 'about' %}">About</a>
+              <a href="{% url 'rooms' %}">Rooms</a>
+              <a href="{% url 'amenities' %}">Amenities</a>
+              <a href="{% url 'location' %}">Location</a>
+
               <li class="dropdown">
                 <a href="#"
                   ><span>Pages</span>
                   <i class="bi bi-chevron-down toggle-dropdown"></i
                 ></a>
                 <ul>
-                  <li><a href="room-details.html">Room Details</a></li>
-                  <li><a href="restaurant.html">Restaurant</a></li>
-                  <li><a href="offers.html">Offers</a></li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a href="gallery.html" class="active">Gallery</a></li>
-                  <li><a href="booking.html">Booking</a></li>
-                  <li><a href="terms.html">Terms Page</a></li>
-                  <li><a href="privacy.html">Privacy Page</a></li>
-                  <li><a href="404.html">404 Page</a></li>
-                  <li><a href="starter-page.html">Starter Page</a></li>
+                  <li>
+                    <a href="{% url 'room_details' %}">Room Details</a>
+                  </li>
+                  <li><a href="{% url 'restaurant' %}">Restaurant</a></li>
+                  <li><a href="{% url 'offers' %}">Offers</a></li>
+                  <li><a href="{% url 'events' %}">Events</a></li>
+                  <li>
+                    <a href="{% url 'gallery' %}" class="active">Gallery</a>
+                  </li>
+                  <li><a href="{% url 'booking' %}">Booking</a></li>
+                  <li><a href="{% url 'terms' %}">Terms Page</a></li>
+                  <li><a href="{% url 'privacy' %}">Privacy Page</a></li>
+                  <li><a href="{% url 'notfound' %}">404 Page</a></li>
+                  <li>
+                    <a href="{% url 'starter_page' %}">Starter Page</a>
+                  </li>
                 </ul>
               </li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="{% url 'contact' %}l">Contact</a></li>
 
               <li class="dropdown">
                 <a href="#english">
@@ -102,7 +109,7 @@
       </div>
     </header>
 
-    {% block content} {% endblock %}
+    {% block content %} {% endblock %}
     <footer id="footer" class="footer position-relative dark-background">
       <div class="footer-top">
         <div class="container">
