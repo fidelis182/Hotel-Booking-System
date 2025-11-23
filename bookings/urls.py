@@ -72,7 +72,6 @@ urlpatterns = [
    path('restaurant/', views.restaurant,name="restaurant"),
    path('room_details/', views.room_details,name="room_details"),
    path('rooms/', views.rooms,name="rooms"),
-   
    path('terms/', views.terms,name="terms"),
 
 

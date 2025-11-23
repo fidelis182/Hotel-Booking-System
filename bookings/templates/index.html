@@ -35,8 +35,8 @@ Home - Bookings
                 </div>
               </div>
               <div class="hero-buttons">
-                <a href="booking.html" class="btn btn-primary">Book Now</a>
-                <a href="rooms.html" class="btn btn-outline">View Rooms</a>
+                <a href="{% url 'booking' %}" class="btn btn-primary">Book Now</a>
+                <a href="{% url 'rooms' %}" class="btn btn-outline">View Rooms</a>
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@ Home - Bookings
         <div class="row gy-4 align-items-center">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="about-content">
-              <h2>Welcome to Grandoria Resort</h2>
+              <h2>Welcome to Victoria-Nice Resort</h2>
               <p class="lead">
                 Where luxury meets tranquility in the heart of nature's
                 paradise.
@@ -179,8 +179,8 @@ Home - Bookings
               <!-- End Stats Row -->
 
               <div class="about-actions">
-                <a href="about.html" class="btn-primary">Our Story</a>
-                <a href="rooms.html" class="btn-secondary">View Rooms</a>
+                <a href="{% url 'booking' %}" class="btn-primary">Our Story</a>
+                <a href="{% url 'rooms' %}" class="btn-secondary">View Rooms</a>
               </div>
             </div>
           </div>
@@ -543,7 +543,7 @@ Home - Bookings
         </div>
 
         <div class="text-center" data-aos="fade-up" data-aos-delay="600">
-          <a href="rooms.html" class="explore-all-link">
+          <a href="{% url 'rooms' %}" class="explore-all-link">
             <span>Explore All Accommodations</span>
             <i class="bi bi-arrow-right"></i>
           </a>
@@ -886,7 +886,7 @@ Home - Bookings
                 </div>
                 <div class="testimonial-author">
                   <img
-                    src="../..static/image/person/person-f-3.webp"
+                    src="../../static/image/person/person-f-3.webp"
                     alt="Client"
                     class="img-fluid rounded-circle"
                     loading="lazy"
@@ -927,7 +927,7 @@ Home - Bookings
               </div>
               <div class="offer-image">
                 <img
-                  src="../..static/image/hotel/showcase-3.webp"
+                  src="../../static/image/hotel/showcase-3.webp"
                   alt="Weekend Getaway"
                   class="img-fluid"
                 />
@@ -965,7 +965,7 @@ Home - Bookings
               </div>
               <div class="offer-image">
                 <img
-                  src="../..static/image/hotel/showcase-7.webp"
+                  src="../../static/image/hotel/showcase-7.webp"
                   alt="Extended Stay Deal"
                   class="img-fluid"
                 />
@@ -1000,7 +1000,7 @@ Home - Bookings
               </div>
               <div class="offer-image">
                 <img
-                  src="../..static/image/hotel/showcase-11.webp"
+                  src="../../static/image/hotel/showcase-11.webp"
                   alt="Advance Booking"
                   class="img-fluid"
                 />
@@ -1114,7 +1114,7 @@ Home - Bookings
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="image-wrapper">
               <img
-                src="../..static/image/hotel/showcase-9.webp"
+                src="../../static/image/hotel/showcase-9.webp"
                 alt="Luxury Hotel Experience"
                 class="img-fluid"
               />
@@ -1153,7 +1153,7 @@ Home - Bookings
                   <i class="bi bi-heart-fill"></i>
                 </div>
                 <img
-                  src="../..static/image/hotel/event-1.webp"
+                  src="../../static/image/hotel/event-1.webp"
                   alt="Wedding Celebrations"
                   class="img-fluid"
                 />
@@ -1187,7 +1187,7 @@ Home - Bookings
                   <i class="bi bi-building"></i>
                 </div>
                 <img
-                  src="../..static/image/hotel/event-4.webp"
+                  src="../../static/image/hotel/event-4.webp"
                   alt="Business Conferences"
                   class="img-fluid"
                 />
@@ -1221,7 +1221,7 @@ Home - Bookings
                   <i class="bi bi-calendar-event"></i>
                 </div>
                 <img
-                  src="../..static/image/hotel/event-8.webp"
+                  src="../../static/image/hotel/event-8.webp"
                   alt="Special Occasions"
                   class="img-fluid"
                 />
@@ -1255,7 +1255,7 @@ Home - Bookings
                   <i class="bi bi-people"></i>
                 </div>
                 <img
-                  src="../..static/image/hotel/event-5.webp"
+                  src="../../static/image/hotel/event-5.webp"
                   alt="Corporate Retreats"
                   class="img-fluid"
                 />
@@ -1289,7 +1289,7 @@ Home - Bookings
                   <i class="bi bi-music-note-beamed"></i>
                 </div>
                 <img
-                  src="../..static/image/hotel/event-6.webp"
+                  src="../../static/image/hotel/event-6.webp"
                   alt="Entertainment Events"
                   class="img-fluid"
                 />
@@ -1323,7 +1323,7 @@ Home - Bookings
                   <i class="bi bi-star"></i>
                 </div>
                 <img
-                  src="../..static/image/hotel/event-9.webp"
+                  src="../../static/image/hotel/event-9.webp"
                   alt="VIP Gatherings"
                   class="img-fluid"
                 />
@@ -1375,7 +1375,7 @@ Home - Bookings
                 <div class="area-highlight">
                   <div class="area-image-wrapper">
                     <img
-                      src="../..static/image/hotel/location-3.webp"
+                      src="../../static/image/hotel/location-3.webp"
                       alt="Entertainment District"
                       class="img-fluid"
                     />
@@ -1403,7 +1403,7 @@ Home - Bookings
                 <div class="area-highlight">
                   <div class="area-image-wrapper">
                     <img
-                      src="../..static/image/hotel/location-6.webp"
+                      src="../../static/image/hotel/location-6.webp"
                       alt="Waterfront Marina"
                       class="img-fluid"
                     />
@@ -1434,7 +1434,7 @@ Home - Bookings
                 <div class="area-highlight">
                   <div class="area-image-wrapper">
                     <img
-                      src="../..static/image/hotel/location-8.webp"
+                      src="../../static/image/hotel/location-8.webp"
                       alt="Historic Quarter"
                       class="img-fluid"
                     />
@@ -1462,7 +1462,7 @@ Home - Bookings
                 <div class="area-highlight">
                   <div class="area-image-wrapper">
                     <img
-                      src="../..static/image/hotel/location-4.webp"
+                      src="../../static/image/hotel/location-4.webp"
                       alt="Shopping Plaza"
                       class="img-fluid"
                     />
@@ -1596,13 +1596,13 @@ Home - Bookings
             <div class="swiper-slide">
               <div class="gallery-item">
                 <img
-                  src="../..static/image/hotel/gallery-1.webp"
+                  src="../../static/image/hotel/gallery-1.webp"
                   alt="Luxurious Suite"
                   class="img-fluid"
                   loading="lazy"
                 />
                 <a
-                  href="../..static/image/hotel/gallery-1.webp"
+                  href="../../static/image/hotel/gallery-1.webp"
                   class="gallery-overlay glightbox"
                 >
                   <i class="bi bi-eye"></i>
@@ -1612,13 +1612,13 @@ Home - Bookings
             <div class="swiper-slide">
               <div class="gallery-item">
                 <img
-                  src="../..static/image/hotel/gallery-5.webp"
+                  src="../../static/image/hotel/gallery-5.webp"
                   alt="Modern Lobby"
                   class="img-fluid"
                   loading="lazy"
                 />
                 <a
-                  href="../..static/image/hotel/gallery-5.webp"
+                  href="../../static/image/hotel/gallery-5.webp"
                   class="gallery-overlay glightbox"
                 >
                   <i class="bi bi-eye"></i>
@@ -1628,13 +1628,13 @@ Home - Bookings
             <div class="swiper-slide">
               <div class="gallery-item">
                 <img
-                  src="../..static/image/hotel/gallery-12.webp"
+                  src="../../static/image/hotel/gallery-12.webp"
                   alt="Elegant Dining Area"
                   class="img-fluid"
                   loading="lazy"
                 />
                 <a
-                  href="../..static/image/hotel/gallery-12.webp"
+                  href="../../static/image/hotel/gallery-12.webp"
                   class="gallery-overlay glightbox"
                 >
                   <i class="bi bi-eye"></i>
@@ -1644,13 +1644,13 @@ Home - Bookings
             <div class="swiper-slide">
               <div class="gallery-item">
                 <img
-                  src="../..static/image/hotel/gallery-8.webp"
+                  src="../../static/image/hotel/gallery-8.webp"
                   alt="Grand Ballroom Setup"
                   class="img-fluid"
                   loading="lazy"
                 />
                 <a
-                  href="../..static/image/hotel/gallery-8.webp"
+                  href="../../static/image/hotel/gallery-8.webp"
                   class="gallery-overlay glightbox"
                 >
                   <i class="bi bi-eye"></i>
@@ -1660,13 +1660,13 @@ Home - Bookings
             <div class="swiper-slide">
               <div class="gallery-item">
                 <img
-                  src="../..static/image/hotel/gallery-15.webp"
+                  src="../../static/image/hotel/gallery-15.webp"
                   alt="Relaxing Poolside"
                   class="img-fluid"
                   loading="lazy"
                 />
                 <a
-                  href="../..static/image/hotel/gallery-15.webp"
+                  href="../../static/image/hotel/gallery-15.webp"
                   class="gallery-overlay glightbox"
                 >
                   <i class="bi bi-eye"></i>
@@ -1676,13 +1676,13 @@ Home - Bookings
             <div class="swiper-slide">
               <div class="gallery-item">
                 <img
-                  src="../..static/image/hotel/gallery-3.webp"
+                  src="../../static/image/hotel/gallery-3.webp"
                   alt="Cozy Guest Room"
                   class="img-fluid"
                   loading="lazy"
                 />
                 <a
-                  href="../..static/image/hotel/gallery-3.webp"
+                  href="../../static/image/hotel/gallery-3.webp"
                   class="gallery-overlay glightbox"
                 >
                   <i class="bi bi-eye"></i>
@@ -1692,13 +1692,13 @@ Home - Bookings
             <div class="swiper-slide">
               <div class="gallery-item">
                 <img
-                  src="../..static/image/hotel/gallery-18.webp"
+                  src="../../static/image/hotel/gallery-18.webp"
                   alt="Spa and Wellness Center"
                   class="img-fluid"
                   loading="lazy"
                 />
                 <a
-                  href="../..static/image/hotel/gallery-18.webp"
+                  href="../../static/image/hotel/gallery-18.webp"
                   class="gallery-overlay glightbox"
                 >
                   <i class="bi bi-eye"></i>
@@ -1708,13 +1708,13 @@ Home - Bookings
             <div class="swiper-slide">
               <div class="gallery-item">
                 <img
-                  src="../..static/image/hotel/gallery-7.webp"
+                  src="../../static/image/hotel/gallery-7.webp"
                   alt="Conference Facilities"
                   class="img-fluid"
                   loading="lazy"
                 />
                 <a
-                  href="../..static/image/hotel/gallery-7.webp"
+                  href="../../static/image/hotel/gallery-7.webp"
                   class="gallery-overlay glightbox"
                 >
                   <i class="bi bi-eye"></i>
